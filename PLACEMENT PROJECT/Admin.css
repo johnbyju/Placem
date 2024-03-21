@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body {
+    display: flex;
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;      /* at last we should change to 110px */
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113, 99, 186, 255);
+
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+
+}
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+.menu {
+    height: 88%;
+    list-style: none;
+    padding: 0;
+}
+.menu li {
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+    background: #e0e0e058;
+}
+.menu a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span {
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+        .tabular--wrapper{
+            background: #fff;
+            margin-top: 1rem;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+        .table-container{
+            width: 100%;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead{
+            background: rgba(113, 99, 186, 255);
+            color: #fff;
+        }
+        th{
+            padding: 15px;
+            text-align: left;
+        }
+        tbody{
+            background: #f2f2f2;
+        }
+        td{
+            padding: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+        tr:nth-child(even){
+            background: #fff;
+        }
+        tfoot{
+            background: rgba(113, 99, 186, 255);
+            font-weight: bold;
+            color: #fff;
+        }
+        tfoot td{
+            padding: 15px;
+            color:#fff
+        }
+        .table-container button{
+            color: green;
+            background: none;
+            cursor: pointer;
+        }
+        .main--title{
+            color: rgba(113, 99, 186, 255);
+            padding-bottom: 10px;
+            font-size: 20px;
+}
+
+.main--content{
+    position: relative;
+    background: #ebe9e9;
+    width: 100%;
+    padding: 1rem;
+  }
+  .header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #f65f5f;
+    border-radius: 10px;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+  }
+  .header--wrapper::before{
+    content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #ff6b6b, #556270);
+        animation: slideAnimation 5s linear infinite;
+  }
+  @keyframes slideAnimation {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+  }
+  .header--title{
+    color: linear-gradient(to right, #ff6b6b, #556270);
+    color: white;
+    /* background-image: linear-gradient(to right, #ff6b6b, #556270);
+    background-size: 200% auto;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    animation: gradientAnimation 5s ease infinite; */
+    position: relative;
+    z-index: 1;
+  }
+  
+  
